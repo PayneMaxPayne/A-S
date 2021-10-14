@@ -5,40 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Какая-то хрень</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="icon/ico" />
   </head>
+
   <body>
+    <h1>You need to be registered for continue</h1>
     <header>
+      <div>Log in or register</div>
       <nav>
+        <form>
+          <p><input name="login" placeholder="Логин" /></p>
+          <p><input name="pass" type="password" placeholder="Пароль" /></p>
+          <p><input type="submit" value="Вход" /></p>
+        </form>
         <ul
           id="list"
           style="background-color: antiquewhite; width: 300px; padding: 20px"
         ></ul>
-        <input id="input" type="text" value="" />
-        <button id="button">save</button>
+        <div>
+          <p>
+            <input id="input-time" placeholder="Start" type="text" value="" />
+            <button id="button-start">start</button>
+          </p>
 
-        <div style="margin-top: 20px">
-          <input id="input-time" type="text" value="" />
-          <button id="button-start">start</button>
+          <p>
+            <input id="input" placeholder="Save" type="text" value="" />
+            <button id="button">save</button>
+          </p>
+
+          <p>
+            <input id="input" placeholder="Reset" type="text" value="" />
+            <button id="reset">reset</button>
+          </p>
         </div>
       </nav>
     </header>
 
     <main>
+      <div id="bg"></div>
       <section>
         <ul>
           <li>
             <article>
               <!-- <img src="./picture.png" /> -->
               <div class="cover">
-                <p><a type="blank" href="http://google.com">Choose one</a></p>
+                <p>
+                  <a
+                    type="blank"
+                    href="https://www.linkedin.com/in/alexey-khodorenko-4b1740210/"
+                    >LinkedIn</a
+                  >
+                </p>
+                <p><a type="blank" href="http://google.com">Google</a></p>
               </div>
             </article>
           </li>
         </ul>
       </section>
     </main>
-
+    <footer>
+      <div>Alexich and Sergich production 2021</div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
