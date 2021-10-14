@@ -13,25 +13,33 @@
 
   <body>
     <h1>You need to be registered for continue</h1>
+    <!-- Для лучшей читабельности желательно делать перенос между соседями, позначу их тремя звездочками: *** -->
+    <!-- *** -->
     <header>
+      <!-- Текст лучше всегда оборачивать в любой текстовый тэг: p, span, h1/2/3 ... т.д. -->
       <div>Log in or register</div>
+      <!-- *** -->
       <nav>
         <form>
           <p><input name="login" placeholder="Логин" /></p>
           <p><input name="pass" type="password" placeholder="Пароль" /></p>
           <p><input type="submit" value="Вход" /></p>
         </form>
+        <!-- *** -->
         <ul
           id="list"
           style="background-color: antiquewhite; width: 300px; padding: 20px"
         ></ul>
+        <!-- *** -->
         <div>
+          <!-- В <p> желательно ложить только текст или текстовый тэг, здесь можно просто div -->
           <p>
             <input id="input-time" placeholder="Start" type="text" value="" />
             <button id="button-start">start</button>
           </p>
-          <input id="input" type="datetime" value="" />
-          <button id="button">set</button>
+          <!-- Закоменчу пока свое -->
+          <!-- <input id="input" type="datetime" value="" />
+          <button id="button">set</button> -->
 
           <p>
             <input id="input" placeholder="Save" type="text" value="" />
@@ -39,6 +47,7 @@
           </p>
 
           <p>
+            <!-- Повторяються id -->
             <input id="input" placeholder="Reset" type="text" value="" />
             <button id="reset">reset</button>
           </p>
@@ -48,11 +57,14 @@
 
     <main>
       <div id="bg"></div>
+      <!-- *** -->
       <section>
         <ul>
           <li>
             <article>
-              <img src="./picture.png" />
+              <!-- Поменял поломаную картинку) -->
+              <img src="./_DSC0213.JPG" width="150" />
+              <!-- *** -->
               <div class="cover">
                 <p>
                   <a
@@ -61,6 +73,7 @@
                     >LinkedIn</a
                   >
                 </p>
+                <!-- *** -->
                 <p><a type="blank" href="http://google.com">Google</a></p>
               </div>
             </article>
@@ -68,9 +81,11 @@
         </ul>
       </section>
     </main>
+    <!-- *** -->
     <footer>
       <div>Alexich and Sergich production 2021</div>
     </footer>
+    <!-- *** -->
     <script src="./index.js"></script>
   </body>
 </html>
