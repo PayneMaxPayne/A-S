@@ -10,26 +10,16 @@ const buttonStart = document.getElementById("button-start");
 //     console.log(ev.target);
 // })
 
-const array = [];
-
 button.addEventListener("click", function (ev) {
-  array.push(input.value);
-  console.log(array);
+  clock.set(...input.value.split(":"));
 });
 
-// list.addEventListener("click", function(ev) {
-//     ev.currentTarget
-//     console.log(ev.currentTarget);
-// })
-
-console.log();
-
+// event click to start button
 buttonStart.addEventListener("click", function (ev) {
   clock.start();
 });
 
 const clock = {
-  //Було скучно написав прям в консоле)) ^кнопка^
   hour: "00",
   minute: "00",
   second: "00",
@@ -90,3 +80,26 @@ const clock = {
     }, 1000);
   },
 };
+
+// function getRandom(min, max) {
+//   min = Math.ceil(min);
+//   max = Math.floor(max);
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// const copyToClipboard = (text) => {
+//   if (navigator?.clipboard?.writeText) {
+//     navigator.clipboard.writeText(text);
+//   } else {
+//     const textField = document.createElement("textarea");
+
+//     document.body.appendChild(textField);
+
+//     textField.innerText = text;
+//     textField.select();
+
+//     document.execCommand("copy");
+
+//     textField.remove();
+//   }
+// };
